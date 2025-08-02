@@ -114,5 +114,5 @@ class Txt(object):
 
 ᴀꜰᴛᴇʀ ᴜsɪɴɢ ᴄᴍᴅ sᴇɴᴅ ᴀɴʏ ᴛᴇxᴛ ɪ ᴡɪʟʟ sᴀᴠᴇ ɪᴛ ᴀs ʏᴏᴜʀ ᴍᴇᴛᴀᴅᴀᴛᴀ
 
-» ᴇx: `@TechifyBots
+» ᴇx: `@TechifyBots`
 """
