@@ -12,6 +12,7 @@ from PIL import Image
 from config import Config
 from .fsub import *
 import os, time, re, random, asyncio
+from .maintenance import get_maintenance
 
 def clean_filename(name):
     name = name.strip()
@@ -19,6 +20,8 @@ def clean_filename(name):
 
 @Client.on_message(filters.private & (filters.document | filters.video))
 async def rename_start(client, message):
+    if await get_maintenance() and message.from_user.id != Config.ADMIN:
+        return await message.reply_text("**🛠️ Bot is Under Maintenance**", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Support", user_id=int(Config.ADMIN))]]))
     file = getattr(message, message.media.value)
     filename = file.file_name
     ban_chk = await jishubotz.is_banned(int(message.from_user.id))
