@@ -16,6 +16,7 @@
 - Supports Broadcasts.
 - Set custom caption.
 - Has a custom Start-up pic.
+- Maintenance Mode
 - Force subscribe available.
 - Supports ulimited renaming at a time.
 - Auto delete 
@@ -66,6 +67,7 @@ ban - To ban a user
 unban - To unban a banned user
 restart - To restart the bot
 broadcast - Message Broadcast command.
+maintenance - Toggle maintenance mode
 status - Check bot status
 ```
 </details>
