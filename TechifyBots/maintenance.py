@@ -4,8 +4,8 @@ from config import Config
 from motor.motor_asyncio import AsyncIOMotorClient
 
 # MongoDB setup
-mongo_client = AsyncIOMotorClient(DATABASE_URL)
-db = mongo_client[DATABASE_NAME]
+mongo_client = AsyncIOMotorClient(Config.DATABASE_URL)
+db = mongo_client[Config.DATABASE_NAME]
 settings_col = db["settings"]
 
 # --- DB Helpers ---
