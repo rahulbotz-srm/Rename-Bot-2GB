@@ -4,24 +4,24 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID = os.environ.get("API_ID", "")
-    API_HASH = os.environ.get("API_HASH", "")
+    API_ID = os.environ.get("API_ID", "24845159")
+    API_HASH = os.environ.get("API_HASH", "b75fc3055203def7fa553e293be94896")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
    
     # database config
-    DATABASE_NAME = os.environ.get("DATABASE_NAME","")     
-    DATABASE_URL = os.environ.get("DATABASE_URL","")
+    DATABASE_NAME = os.environ.get("DATABASE_NAME","mongodb+srv://mrkxbots:mrkxbots@cluster0.7nfjxwv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")     
+    DATABASE_URL = os.environ.get("DATABASE_URL","Cluster0")
 
     # other configs
     BOT_UPTIME = time.time()
     START_PIC = (os.environ.get("START_PIC", "https://envs.sh/N2f.jpg https://envs.sh/N2a.jpg https://envs.sh/N2O.jpg")).split()
-    ADMIN = int(os.environ.get("ADMIN", ""))
+    ADMIN = int(os.environ.get("ADMIN", "6025484066"))
 
     # channels
-    IS_FSUB = os.environ.get("IS_FSUB", "False").lower() == "true"  # Set "True" For Enable Force Subscribe
-    AUTH_CHANNELS = list(map(int, os.environ.get("AUTH_CHANNELS", "").split())) # Add Multiple Channels iD By Space
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
-    BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", ""))
+    IS_FSUB = os.environ.get("IS_FSUB", "true").lower() == "true"  # Set "True" For Enable Force Subscribe
+    AUTH_CHANNELS = list(map(int, os.environ.get("AUTH_CHANNELS", "-1002219295835").split())) # Add Multiple Channels iD By Space
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002476012374"))
+    BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", "-1002476012374"))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
@@ -35,7 +35,7 @@ class Txt(object):
 
 <blockquote><b>𝘕𝘰𝘵𝘦 :</b> 𝘈𝘥𝘶𝘭𝘵 𝘊𝘰𝘯𝘵𝘦𝘯𝘵 𝘪𝘴 𝘚𝘛𝘙𝘐𝘊𝘛𝘓𝘠 𝘱𝘳𝘰𝘩𝘪𝘣𝘪𝘵𝘦𝘥 𝘉𝘢𝘯 𝘸𝘪𝘭𝘭 𝘣𝘦 𝘱𝘦𝘳𝘮𝘢𝘯𝘦𝘯𝘵.</blockquote>"""
 
-    ABOUT_TXT = ABOUT_TXT = """<b>‣ ᴍʏ ɴᴀᴍᴇ : <a href='https://youtube.com/@techifybots'>ᴢᴏʀᴏ ʀᴇɴᴀᴍᴇ ʙᴏᴛ</a>
+    ABOUT_TXT = ABOUT_TXT = """<b>‣ ᴍʏ ɴᴀᴍᴇ : <a href='https://t.me/MRK2xBots'>ᴢᴏʀᴏ ʀᴇɴᴀᴍᴇ ʙᴏᴛ</a>
 ‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a> 
 ‣ ᴅᴀᴛᴀʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏᴅʙ</a>
 ‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 𝟹</a> 
